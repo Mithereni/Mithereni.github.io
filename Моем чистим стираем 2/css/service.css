@@ -1,0 +1,79 @@
+.header-service{
+	background: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 73px;
+	padding-bottom: 38px;
+}
+
+body{
+	background: #F6F6F6;
+}
+
+.service-title{
+	text-decoration: underline;
+	margin-top: 36px;
+	margin-bottom: 37px;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+	color: #000000;
+}
+
+.first{
+	margin-top: -37px;
+}
+
+.service-margin{
+	padding-left: 125px;
+}
+
+.service-item-title{
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 39px;
+	color: #000000;
+}
+
+.service-btn{
+	margin-top: 57px;
+	text-align: center;
+	color: #FFF;
+	padding: 16px 24px 16px 24px;
+	background: #18AA38;
+	border-radius: 15px;
+}
+
+.service-perks{
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	grid-gap: 40px;
+	color: #000000;
+}
+
+.service-perks li{
+	display: list-item;
+  	list-style-type: "✅";
+}
+
+.service-item-right .service-margin{
+	margin-top: 50px;
+}
+
+.service-item-left .service-margin{
+	margin-top: 50px;
+}
+
+.service-img{
+	width: 100%;
+}
+
+.row{margin:0;padding:0;}
+
+
+.service-item-right, .service-item-left{
+	border-top: 2px solid #1E1E1E;
+}
