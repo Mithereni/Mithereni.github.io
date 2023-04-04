@@ -1,0 +1,43 @@
+@media (max-width:  820px){
+	.service-margin{
+		padding-left: 20px;
+		padding-bottom: 25px;
+	}
+}
+
+
+@media (max-width: 720px){
+	
+	.menu-list{
+		padding-left: 40vw;
+	}
+
+}
+
+@media (max-width: 1400px) and (min-width: 1000px){
+	body{
+		background: #F6F6F6;
+
+	}
+}
+
+@media (max-width: 1000px) and (min-width: 764px){
+	body{
+		background: #F6F6F6;
+
+	}
+}
+
+@media (max-width: 764px) and (min-width: 600px){
+	body{
+		background: #F6F6F6;
+
+	}
+}
+
+@media (max-width: 600px){
+	body{
+		background: #F6F6F6;
+
+	}
+}

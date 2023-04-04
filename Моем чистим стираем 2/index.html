@@ -9,23 +9,26 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/media.css">
 	<title>Document</title>
 </head>
 <body>
-		<header class="header">
+		<header class="header header-service">
 		<div class="container-header">
 			<div class="logo">
 				<img src="img/logo.png" alt="">
 			</div>
 			<div class="header-content">
 				<div class="menu">
-					<ul class="menu-list">
-						<li><a href="index.html">Главная</a></li>
-						<li><a href="index.html#price-element">Услуги</a></li>
-						<li><a href="service.html">Прайс-лист</a></li>
-						<li><a href="about us.html">О нас</a></li>
-						<li class="phone">+7 966 740-63-35</li>
-						<li class="header-button"><button><b><a href="https://wa.me/79667406335">Задавайте вопросы</a></b></button></li>
+					<ul class="menu-list top-nav">
+						<li class="icon"><a href="#" id="burger" >&#9776;</a></li>
+						<li><a href="index.html" class="menu-item">Главная</a></li>
+						<li><a href="index.html#price-element" class="menu-item">Услуги</a></li>
+						<li><a href="service.html" class="menu-item" >Прайс-лист</a></li>
+						<li><a href="about us.html" class="menu-item">О нас</a></li>
+						<li class="phone"><a href="tel:+79667406335">+7 966 740-63-35</a></li>
+						<li class="header-button"><button><b>Задавайте вопросы</b></button></li>
+						
 					</ul>
 				</div>
 				
@@ -35,7 +38,7 @@
 	</header>
 		<div class="container">
 			<div class="row">
-				<div class="col-6">
+				<div class="col-md-6 col-sm-12 col-xs-12">
 					<div class="main-frame">
 						<div class="main-title">Пусть ваш дом всегда сияет чистотой</div>
 						<div class="main-text">Работаем по всему Краснодарскому краю</div>
@@ -44,23 +47,23 @@
 						<img src="img/main-img.png" alt="" width="425" height="511">
 					</div>
 				</div>
-				<div class="col-5">
+				<div class="col-md-5 sm-12 col-xs-12">
 					<div class="main-form">
-					<form action="#" class="form-content">
+					<form action="sender.php" method="post">
 						<fieldset>
 							<label for="#" class="form-title">ОСТАВЬТЕ ЗАЯВКУ</label>
-							<select name="main form" id="123"
+							<select name="main form" id="select"
 							class="form-section">
 
-								<option value="1">Услуга 1</option>
+								<option value="1" id="service_2">Услуга 1</option>
 								<option value="2">Услуга 2</option>
 								<option value="3">Услуга 3</option>
 								<option value="4">Услуга 4</option>
 							</select>
-							<input type="number" placeholder="Площадь объекта " class="form-section">
-							<input type="name" placeholder="Ваше имя" class="form-section">
-							<input type="phone" placeholder="Номер телефона" class="form-section">
-							<button class="form-btn">Заказать уборку</button>
+							<input type="number" placeholder="Площадь объекта " class="form-section" min="1" max="2000" size="4" id = "meters">
+							<input type="name" placeholder="Ваше имя" class="form-section" class="name" name="name" required>
+							<input type="phone" placeholder="Номер телефона" class="form-section" id="phone_1"  name="phone" required>
+							<button type="button" class="form-btn">Заказать уборку</button>
 
 						</fieldset>
 					</form>
@@ -73,21 +76,23 @@
 				<div class="container">
 				<div class="row">
 					
-						<div class="col-6">
-							<div class="company-img">
-								<img src="img/company.png" alt="">
-							</div>	
+						<div class="col-md-6  col-sm-12  col-xs-12 ">
+								<div class="company-img">
+									<img src="img/company.png" alt="">
+								</div>
 						</div>
 						
-						<div class="col-5 offset-1">
+						<div class="col-md-5 offset-md-1 col-sm-12 col-xs-12">
 							<div class="company-content">
 								<div class="company-title">Моем Чистим Стираем - клининговая компания нового поколения</div>
 							<div class="company-text">
-								<ul class="company-perks">
-									<li>Наша компания имеет 10-ти летний опыт в сфере клининга и предлагает качественные услуги по доступным ценам </li>
-									<li>Мы используем только профессиональное оборудование и безопасные моющие средства, чтобы обеспечить чистоту и гигиену вашего помещения</li>
-									<li>Наши сотрудники - опытные и квалифицированные специалисты, которые быстро и качественно выполняют свою работу</li>
-								</ul>
+								<div class="nav">
+									<ul class="company-perks">
+										<li>Наша компания имеет 10-ти летний опыт в сфере клининга и предлагает качественные услуги по доступным ценам </li>
+										<li>Мы используем только профессиональное оборудование и безопасные моющие средства, чтобы обеспечить чистоту и гигиену вашего помещения</li>
+										<li>Наши сотрудники - опытные и квалифицированные специалисты, которые быстро и качественно выполняют свою работу</li>
+									</ul>
+								</div>	
 							</div>
 							</div>
 						</div>
@@ -97,33 +102,37 @@
 
 		<div class="price" id="price-element">
 				<div class="container">
-						<div class="price-title"><h1>Стоимость услуг</h1></div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="price-title"><h1>Стоимость услуг</h1></div>
+							</div>	
+						</div>
 				<div class="row">
-					<div class="col-6 offset-3">
+					<div class="col-md-12 col-sm-12  col-xs-12 ">
 						<div class="price-text"><p>Для постоянных клиентов действует система скидок. Предлагаем вам как разовую уборку, так еженедельную и ежемесячную</p>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-4">
+				<div class="row card-container">
+					<div class="col-md-4 col-sm-9 offset-sm-2 offset-md-0 col-xs-12">
 						<div class="card">
 							<div class="card-img"><img src="img/price_1.png" alt=""></div>
 							<div class="card-title">Генеральная уборка</div>
 							<div class="card-price">от 30р за м<sup>2</sup></div>
-							<div><button class="card-btn center-block">Заказать</button></div>
+							<div><button class="card-btn center-block" onclick= "document.location='#index.html.main-form'">Заказать</button></div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-md-4 col-sm-9 offset-sm-2  offset-md-0 col-xs-12">
 						<div class="card">
-							<div class="card-img"><img src="img/price_1.png" alt=""></div>
-							<div class="card-title">Генеральная уборка</div>
+							<div class="card-img"><img src="img/price_2.png" alt=""></div>
+							<div class="card-title high">Мойка плиточного тротуара</div>
 							<div class="card-price">от 30р за м<sup>2</sup></div>
 							<div><button class="card-btn center-block">Заказать</button></div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-md-4 col-sm-9 offset-md-0 offset-sm-2 col-xs-12">
 						<div class="card">
-							<div class="card-img"><img src="img/price_1.png" alt=""></div>
-							<div class="card-title">Генеральная уборка</div>
+							<div class="card-img"><img src="img/price_3.png" alt=""></div>
+							<div class="card-title">Мойка фасадов</div>
 							<div class="card-price">от 30р за м<sup>2</sup></div>
 							<div><button class="card-btn center-block">Заказать</button></div>
 						</div>
@@ -135,7 +144,7 @@
 			<div class="container">
 				<div class="review-title">Отзывы наших клиентов</div>
 				<div class="row">
-					<div class="col-4">
+					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 ">
 						<div class="review-card">
 							<div class="review-avatar"><img src="img/user_avatar-1.png" alt=""></div>
 							<div class="review-name">Misha Kelvich</div>
@@ -144,27 +153,46 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 						<div class="review-card">
 							<div class="review-avatar"><img src="img/user_avatar-1.png" alt=""></div>
-							<div class="review-name">Misha Kelvich</div>
+							<div class="review-name">Мария Димиденко</div>
 							<div class="stars"><img src="img/stars.png" alt=""></div>
-							<div class="review-text">Отличная компания) Ни чуть не пожалел что обратился именно к ним. Сделали все качественно и быстро. Результатом остался очень доволен😉 Ребята профессионалы. Знают что делают. В общем всем советую. Ребята экономят не только ваше время, но и средства, в общем можно довериться им на все 1000%.
+							<div class="review-text">Заказывали уборку четырехкомнатной квартиры. Квартира с мебелью, люстрами... Были сомнения по уборке чужими людьми, но после уборки мы не могли нарадоваться. Качество уборки понравилось! Все сделано на совесть!!! Все отмыли, отодвинули, вымыли рекомендую !!!
 							</div>
 						</div>
 					</div>
-					<div class="col-4">
+					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 						<div class="review-card">
 							<div class="review-avatar"><img src="img/user_avatar-1.png" alt=""></div>
-							<div class="review-name">Misha Kelvich</div>
+							<div class="review-name">Мария А.</div>
 							<div class="stars"><img src="img/stars.png" alt=""></div>
-							<div class="review-text">Отличная компания) Ни чуть не пожалел что обратился именно к ним. Сделали все качественно и быстро. Результатом остался очень доволен😉 Ребята профессионалы. Знают что делают. В общем всем советую. Ребята экономят не только ваше время, но и средства, в общем можно довериться им на все 1000%.
+							<div class="review-text">С уборкой справились на отлично 👌, нам очень понравилось, рада, что познакомилась с профессионалами!!!
+
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-4">
+					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+						<div class="review-card no-margine">
+							<div class="review-avatar"><img src="img/user_avatar-1.png" alt=""></div>
+							<div class="review-name">Асият К.</div>
+							<div class="stars"><img src="img/stars.png" alt=""></div>
+							<div class="review-text">Не первый раз пользуюсь услугами компании, ожидания оправдываются 100%. Рекомендую девочки, обращайтесь)останетесь довольными)
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+						<div class="review-card no-margine">
+							<div class="review-avatar"><img src="img/user_avatar-1.png" alt=""></div>
+							<div class="review-name">Милана Калмыкова</div>
+							<div class="stars"><img src="img/stars.png" alt=""></div>
+							<div class="review-text">Спасибо за чистоту!!!
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 						<div class="review-card no-margine">
 							<div class="review-avatar"><img src="img/user_avatar-1.png" alt=""></div>
 							<div class="review-name">Misha Kelvich</div>
@@ -172,35 +200,17 @@
 							<div class="review-text">Отличная компания) Ни чуть не пожалел что обратился именно к ним. Сделали все качественно и быстро. Результатом остался очень доволен😉 Ребята профессионалы. Знают что делают. В общем всем советую. Ребята экономят не только ваше время, но и средства, в общем можно довериться им на все 1000%.
 							</div>
 						</div>
-					</div>
-					<div class="col-4">
-						<div class="review-card no-margine">
-							<div class="review-avatar"><img src="img/user_avatar-1.png" alt=""></div>
-							<div class="review-name">Misha Kelvich</div>
-							<div class="stars"><img src="img/stars.png" alt=""></div>
-							<div class="review-text">Отличная компания) Ни чуть не пожалел что обратился именно к ним. Сделали все качественно и быстро. Результатом остался очень доволен😉 Ребята профессионалы. Знают что делают. В общем всем советую. Ребята экономят не только ваше время, но и средства, в общем можно довериться им на все 1000%.
-							</div>
-						</div>
-					</div>
-					<div class="col-4">
-						<div class="review-card no-margine">
-							<div class="review-avatar"><img src="img/user_avatar-1.png" alt=""></div>
-							<div class="review-name">Misha Kelvich</div>
-							<div class="stars"><img src="img/stars.png" alt=""></div>
-							<div class="review-text">Отличная компания) Ни чуть не пожалел что обратился именно к ним. Сделали все качественно и быстро. Результатом остался очень доволен😉 Ребята профессионалы. Знают что делают. В общем всем советую. Ребята экономят не только ваше время, но и средства, в общем можно довериться им на все 1000%.
-							</div>
-						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>	
 		</section>
 		<footer class="footer">
 			<div>
 				<ul class="footer-menu">
-					<li>Главная</li>
-					<li>Услуги</li>
-					<li>Прайс-лист</li>
-					<li>О нас</li>
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="index.html#price-element">Услуги</a></li>
+					<li><a href="service.html">Прайс-лист</a></li>
+					<li><a href="about us.html">О нас</a></li>
 				</ul>
 			</div>
 			<div class="container">
@@ -219,7 +229,10 @@
 				</div>	
 			</div>	
 		</footer>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="main.js"></script>	 
+	<script src="jquery.maskedinput.js"></script>
+	<script src="jquery.validate.min.js"></script>
 	
-
 </body>
 </html>
