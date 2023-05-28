@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Форма обратной связи</title>
+  <style>
+    /* Стили для формы */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Roboto, sans-serif;
+      background: #f7f7f7;
+    }
+
+    .form-container {
+      width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .form-group input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+    .form-group input[placeholder]{
+      font-family: Roboto, sans-serif;
+      font-weight: bold;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+   <div class="form-container">
+    <form method="post" action="form.php">
+      <div class="form-group">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="training-type">Тип тренировки:</label>
+        <select id="training-type" name="training-type" required>
+          <option value="">Выберите тип тренировки</option>
+          <option value="strength-training">Силовая тренировка</option>
+          <option value="cardio-training">Кардио тренировка</option>
+          <option value="flexibility-training">Тренировка гибкости</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Отправить" placeholder="Отправить">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
