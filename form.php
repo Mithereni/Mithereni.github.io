@@ -1,21 +1,35 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-  $name = $_POST["name"];
-  $trainingType = $_POST["training-type"];
-  $email = $_POST["email"];
+// Получение данных из формы
+$name = $_POST['name'];
+$trainingType = $_POST["training-type"];
+$email = $_POST["email"];
 
-  // Настройки почтового сервера
-  $to = "bebraleg0909@gmail.com";  // Замените на вашу почту
-  $subject = "Форма обратной связи";
-  $message = "Имя: " . $name . "\n" .
-             "Тип тренировки: " . $trainingType . "\n" .
-             "E-mail: " . $email;
 
-  // Отправка письма
-  if (mail($to, $subject, $message)) {
-    echo "Сообщение успешно отправлено!";
-  } else {
-    echo "Произошла ошибка при отправке сообщения.";
-  }
+$name = htmlspecialchars($name);
+$trainingType = htmlspecialchars($$trainingType);
+
+
+$name = urldecode($name);
+$trainingType = urldecode($trainingType);
+
+
+$name = trim($name);
+$trainingType = trim($trainingType);
+
+
+if(mail("bebraleg0909@gmail.com",
+"Новое письмо с сайта",
+"Имя: ".$name."\n".
+"Телефон: ".$phone."\n".
+"Услуга: ".$service."\n".
+"Площадь: ".$meters,
+"From: no-reply@mydomains.ru \r\n"
+)
+){
+    echo("Письмо отправлено");
+    
+}else{
+    echo("Ошибка");
 }
+
 ?>
