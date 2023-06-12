@@ -16,7 +16,7 @@ body{
 .main-title{
 	margin-top: 200px;
 	font-weight: 700;
-	font-size: 58px;
+	font-size: 48px;
 	line-height: 80px;
 	letter-spacing: 0.2px;
 	color: #FFFFFF;
@@ -138,4 +138,8 @@ color: #737373;
 .video{
 	width: 100%;
 	height: 350px;
+}
+
+.d3{
+	margin-top: 100px;
 }
