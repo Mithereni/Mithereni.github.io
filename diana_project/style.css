@@ -1,0 +1,141 @@
+body{
+	font-family:'Montserrat', sans-serif;
+	background: #FFF;
+}
+
+.container{
+	width: 1050px;
+}
+
+.main-frame{
+	background: #0061FF;
+	 background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.main-title{
+	margin-top: 200px;
+	font-weight: 700;
+	font-size: 58px;
+	line-height: 80px;
+	letter-spacing: 0.2px;
+	color: #FFFFFF;
+}
+
+.main-text{
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	letter-spacing: 0.2px;
+	color: #FFFFFF;
+}
+
+.btn_1{
+	margin-top: 30px;
+	background: #FC724D;
+	border-radius: 5px;
+	padding: 15px 40px 15px 40px;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: #FFFFFF;
+
+}
+
+.btn_2{
+	margin-top: 30px;
+	background: none;
+	border: 1px solid #FC724D;
+	border-radius: 5px;
+	padding: 15px 40px 15px 40px;
+	font-size: 14px;
+	line-height: 22px;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color: #FFFFFF;
+
+}
+
+.departments-title,.learning-title,.activity-title
+{
+	margin-top: 340px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 50px;
+	letter-spacing: 0.2px;
+	color: #252B42;
+}
+
+.learning{
+	margin-top: 330px;
+}
+
+.activity{
+	margin-top: 260px;
+}
+
+.learning-title{
+	margin-top: 105px;
+}
+
+.activity-title{
+	margin-top: 50px;
+}
+
+.departments-text,.learning-text,.activity-text
+{
+	margin-top: 35px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.2px;
+	color: #737373;
+}
+
+.departments-learn,.learning-learn,.activity-learn
+{
+	margin-top: 35px;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.2px;
+	color: #FC724D;
+}
+
+.department-card{
+	padding: 35px 40px;
+	gap: 20px;
+	background: #FFFFFF;
+	box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+}
+
+.department-card.first{
+	margin-top: 100px;
+}
+
+.d-card-title{
+	margin-top: 15px;
+	margin-left: 20px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.1px;
+	color: #252B42;
+}
+
+.d-card-text{
+	font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: 0.2px;
+color: #737373;
+}
+.learning-title,.learning-text,.learning-learn{
+	margin-left: 100px;
+}
+
+.video{
+	width: 100%;
+	height: 350px;
+}
